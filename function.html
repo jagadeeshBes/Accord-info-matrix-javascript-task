@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>js</title>
+    </head>
+    <body id="color">
+       <button id="bt">click</button>
+        <script>
+            a=document.getElementsById("bt")
+            b=document.getElementsById("color")
+            hex=[0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','E','F']
+            a.addEventListener("click",changebg)
+            function changebg(){
+                let hexcolor="#"
+                for(i=1;i<=6;i++){
+                    hexcolor+=renderhex()
+                }
+                console.log(hexcolor)
+            }
+            function renderhex(){
+            random=Math.floor(Math.random()*16)
+            return hex[random]
+            }
+        </script>
+    </body>
+</html>

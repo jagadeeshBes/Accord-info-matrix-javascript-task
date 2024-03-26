@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    
+</body>
+<div id="text"></div>
+<input type="text" id="intp" onkeypress="okey()">
+    <script>
+	function okey(){
+	a = document.getElementById("text")
+	b = document.getElementById("intp").value
+	
+	if(b.value !== ""){
+	a.innerHTML = b
+	}
+	}
+    </script>
+</html>

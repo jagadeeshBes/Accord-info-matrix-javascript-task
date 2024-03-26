@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+<input type="radio" id="accept" onclick="next()"name="a">I accept the agrement<br>
+<input type="radio">I do not accept the agrment<br>
+<input type="button" value="<back"><input type="button" value="next>" id='next' name="a"><input type="button" value="cancel">
+<script>
+	b=document.getElementById("accept")
+	a=document.getElementById("next")
+	a.disabled=true
+	function next(){
+	
+	if (b.checked == true){
+	a.disabled=false
+	}
+	else{
+	a.disabled=true
+	}
+	}
+</script>
+</body>
+
+</html>

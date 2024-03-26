@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validate()">
+        <label>Enter the number</label>
+        <input type="text" id="input">
+        <div id="text"></div>
+    </form>
+    <script>
+        inputValue = document.getElementById('input')
+        text = document.getElementById('text');
+
+        expretion = /^[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}$/
+
+        function validate(){
+            if( inputValue == " "){
+                text.innerText="enter input"
+                text.focus();
+                return false
+            }
+            else if(expretion.test(inputValue.value) == false){
+                text.innerText="invalid"
+                text.focus();
+                return false;
+                
+            }
+        }
+    </script>
+</body>
+</html>

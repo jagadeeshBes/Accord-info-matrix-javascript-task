@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<title>login form</title>
+</head>
+<body>
+<form name="sample" action="#">
+<input type="text" name="text1"placeholder="enter name">
+<input type="number" name="text2"placeholder="enter age">
+<input type="submit" onsubmit="getvalue()" value="reg" >
+</form>
+<script>
+function getvalue(){
+name=document.getElementById.sample.text1.value
+age=parseInt(document.getElementById.sample.text2.value)
+console.log("name",name)
+console.log("age",age)
+}
+i=5
+v=setInterval(demo,1000)
+function demo(){
+i--
+if(i<0){
+clearInterval(v)
+window.location.replace("fectorial.html")//replace window use soruce file
+}
+}
+
+</script>
+</body>
+</html>

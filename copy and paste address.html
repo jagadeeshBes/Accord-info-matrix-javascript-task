@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<title>login form</title>
+</head>
+<body>
+<label for="add">enter address</label>
+<textarea id="add" rows="3" col="20"></textarea>
+<div>
+<input type="checkbox" id="ck" onclick="display()">same address
+</div>
+<label for="a">confrom address</label>
+<textarea id="a" rows="3" col="20"></textarea>
+<script>
+function display(){
+a=document.getElementById("add")
+b=document.getElementById("ck")
+c=document.getElementById("a")
+if(b.checked=true){
+c.value=a.value
+b.disabled=true
+}else{
+c.value=""
+b.disabled=false
+}
+}
+</script>
+</body>
+</html>

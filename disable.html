@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+	<label>Expreienced?</label>
+	<input type="checkbox" id="ch" value="exper" onclick="change()">
+	<label>Experienced</label>
+	<select id='year'>
+	<option>--select--</option>
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	</select>
+<script>
+	a = document.getElementById("year").style.display="none"
+	
+	function change(){
+	check = document.getElementById("ch")
+	if(ch.checked == true){
+	document.getElementById("year").style.display="block"
+	}
+	else{
+	document.getElementById("year").style.display="none"
+	}
+	}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+	<button id="but">click</button>
+	<p id="para"></p>
+	<script>
+		a=document.getElementById("but");
+		a.addEventListener("click",function1)
+		a.addEventListener("mouseover",function2)
+		a.addEventListener("mouseout",function3)
+		p=document.getElementById("para")
+		
+		function function1(){
+		a.style.color="red"
+		p.innerText="click"
+		}
+		function function2(){
+		a.style.color="blue"
+		p.innerText="over"
+		}
+		function function3(){
+		a.style.color="green"
+		p.innerText="out"
+		}
+	</script>
+</body>
+</html>

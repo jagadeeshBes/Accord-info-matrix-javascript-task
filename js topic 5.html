@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(0deg,rgba(34,199,193)9%,rgba(121,32,153,1)66%);
+             background-attachment: fixed;
+    
+        }
+        button{
+            background-color: #079467;
+            color: floralwhite;
+            margin: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>0
+<body>
+<input type="button" id="start" value="start" onClick="startTimer()">
+<input type="button" id="stop" value="stop" onClick="stopTimer()">
+<input type="button" id="pause" value="pause" onClick="pauseTime()">
+ <div class="output"></div>  
+</body>
+<script>
+   i = 0
+   function startTimer(){
+   time=setInterval(function(){
+    i++;
+    document.write(i)
+    document.getElementById("output")= innerText = i;
+   },1000);
+}
+function stopTimer(){
+    clearInterval(time);
+    i = 0
+    doument.getElementById("output")= innerText="";
+}
+function pauseTime(){
+    clearInterval(time);
+}
+   
+</script>
+</html>

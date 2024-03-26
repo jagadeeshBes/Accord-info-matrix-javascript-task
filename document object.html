@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<title>background img</title>
+<link href="F:\css\css 4 q3.css" rel="stylesheet">
+</head>
+<body>
+<h1 id="pussy">cm to inche converter</h1>
+<div id="inputdiv">
+	<input type="text" id="input" placeholder="length in cm">
+</div>
+<div>
+	<button type="submit" onclick="convert()">converrt to inche</button>
+</div>
+<div id="result">
+
+<script>
+	function convert(){
+	let a = Number(document.getElementById("input").value)
+    let b=a/2.54
+	let result=document.getElementById("result")
+	result.innerHTML=b.toFixed(5) }
+	let str1="jagadeesh is good boy"
+	let str2="kamalesh is good boy"
+</script>
+</body>
+</html>

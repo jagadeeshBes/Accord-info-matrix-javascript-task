@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+	<input type="text" placeholder="enter address" id="add1">
+	<input type="checkbox" onclick="copy()" id="ck"><br>
+	<input type="text" placeholder="enter address" id="add2">
+	<script>
+		
+		function copy(){
+		
+		address1 = document.querySelector("#add1")
+		 address2 = document.querySelector("#add2")
+		 check = document.querySelector("#ck")
+		if(check.checked == true){
+			address2.value = address1.value
+			
+			}
+		}
+	</script>
+</body>
+</html>

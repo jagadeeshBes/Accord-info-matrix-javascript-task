@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+    <input type="text" id='string11' placeholder="Enter the string">
+    <input type="button" onclick="polindrom()">
+    <p id="output"></div>
+
+    <script>
+         
+        const string1 = document.getElementById('string11').value;
+        const out = document.getElementById("output")
+        function polindrom(){
+            var a='';
+            
+            for(i=string1.length-1;i>=0;i--)
+            {
+                a=a+string1.charAt(i);
+                
+            }
+            if( a == string1){
+                    out.innerHTML="this is polindrom";
+                }
+                else{
+                    out.innerHTML="this is not polindrom";
+                }
+        }
+    </script>
+    
+</body>
+</html>
